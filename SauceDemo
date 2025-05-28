@@ -1,0 +1,47 @@
+User Story: Add Product to Cart and Complete Checkout
+Title: Standard user adds a product to the cart and completes checkout
+
+As a standard user,
+I want to log in, add a product to my shopping cart, and complete the checkout process,
+So that I can successfully place an order on the Sauce Demo website.
+
+Acceptance Criteria:
+Login Functionality
+
+Given I am on the login page,
+
+When I enter a valid username and password (standard_user / secret_sauce),
+
+Then I should be redirected to the products page.
+
+Add Product to Cart
+
+Given I am on the products page,
+
+When I click on "Add to cart" for a product (e.g., "Sauce Labs Backpack"),
+
+Then the product should be added to the cart and the cart icon should update with the item count.
+
+View Cart
+
+Given I have added a product to the cart,
+
+When I click the cart icon,
+
+Then I should see the product listed in the cart.
+
+Checkout Process
+
+Given I am on the cart page,
+
+When I click the "Checkout" button and provide valid shipping information,
+
+Then I should be able to proceed to the overview page and see order details.
+
+Complete Order
+
+Given I am on the overview page,
+
+When I click the "Finish" button,
+
+Then I should see a confirmation message indicating the order was successfully placed.
